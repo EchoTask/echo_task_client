@@ -1,6 +1,6 @@
-# EchoTask macOS Client
+# EchoTask Client
 
-EchoTask macOS Client is a sophisticated tool designed for macOS users, aiming to enhance productivity and self-awareness by meticulously recording your computer activities. Through an intuitive chatbot interface, EchoTask allows you to effortlessly retrieve a summary of your daily tasks and activities, enabling better time management and productivity insights.
+EchoTask Client is a sophisticated tool designed for users, aiming to enhance productivity and self-awareness by meticulously recording your computer activities. Through an intuitive chatbot interface, EchoTask allows you to effortlessly retrieve a summary of your daily tasks and activities, enabling better time management and productivity insights.
 
 ## Features
 

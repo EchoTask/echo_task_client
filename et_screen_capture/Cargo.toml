@@ -1,18 +1,14 @@
 [package]
-name = "echo_task_client"
+name = "et_screen_capture"
 version = "0.1.0"
 edition = "2021"
 authors = ["Konstantin <zoxo@outlook.com>"]
-repository = "https://github.com/EchoTask/echo_task_client"
-# Additional metadata
-license = "MIT OR Apache-2.0"
+description = "Package for get screen capture"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members = [".", "et_screen_capture", ]
 
 [dependencies]
-et_screen_capture = { path = "et_screen_capture" }
+xcap = "0.0.3"
 
 [dev-dependencies]
 

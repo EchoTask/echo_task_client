@@ -1,3 +1,4 @@
+
 fn main() {
-    println!("Hello, world!");
+    et_screen_capture::start_scree_recorder();
 }

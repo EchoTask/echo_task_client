@@ -2,7 +2,14 @@
 name = "echo_task_client"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Konstantin <zoxo@outlook.com>"]
+repository = "https://github.com/EchoTask/echo_task_client"
+# Additional metadata
+license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]

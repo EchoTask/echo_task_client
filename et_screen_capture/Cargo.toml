@@ -10,7 +10,10 @@ description = "Package for get screen capture"
 [dependencies]
 xcap = "0.0.3"
 tokio = {version = "1.36", features = ["full"]}
-time = "0.3.34"
+image = "0.24"
+webp = "0.2"
+chrono = "0.4"
+fast_image_resize = "3.0"
 
 [dev-dependencies]
 

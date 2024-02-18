@@ -9,10 +9,11 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
-members = [".", "et_screen_capture", ]
+members = [".", "et_logger", "et_screen_capture", ]
 
 [dependencies]
 et_screen_capture = { path = "et_screen_capture" }
+et_logger = { path = "et_logger" }
 
 [dev-dependencies]
 

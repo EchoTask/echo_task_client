@@ -1,7 +1,7 @@
 use std::num::NonZeroU32;
 use image::{DynamicImage, ImageBuffer, RgbaImage};
 use fast_image_resize as fir;
-use tracing::{info, error, instrument};
+use tracing::{info, error};
 
 /// Resizes an image in stages for improved performance.
 ///

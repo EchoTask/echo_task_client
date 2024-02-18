@@ -11,6 +11,7 @@ description = "Package for get screen capture"
 xcap = "0.0.3"
 tokio = {version = "1.36", features = ["full"]}
 image = "0.24"
+image_hasher = "1.2"
 webp = "0.2"
 chrono = "0.4"
 fast_image_resize = "3.0"

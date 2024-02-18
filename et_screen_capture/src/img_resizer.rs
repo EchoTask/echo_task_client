@@ -3,6 +3,8 @@ use image::{DynamicImage, ImageBuffer, RgbaImage};
 use fast_image_resize as fir;
 use tracing::{info, error};
 
+const RESIZE_COEFFICIENT: f32 = 1.85;
+
 /// Resizes an image in stages for improved performance.
 ///
 /// # Arguments
@@ -69,7 +71,7 @@ pub fn resize_image_img(image: RgbaImage) -> Option<DynamicImage> {
 pub fn resize_image_with_max_width(original_width: u32, original_height: u32) -> (u32, u32) {
     info!("Calculating target dimensions with max width strategy");
 
-    let provisional_target_width = (original_width as f32 / 1.7) as u32;
+    let provisional_target_width = (original_width as f32 / RESIZE_COEFFICIENT) as u32;
     let target_width = provisional_target_width.max(1080);
     let scaling_factor = target_width as f32 / original_width as f32;
     let target_height = (original_height as f32 * scaling_factor) as u32;

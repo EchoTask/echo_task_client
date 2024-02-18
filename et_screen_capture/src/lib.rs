@@ -70,7 +70,7 @@ async fn get_one_record(last_image: Arc<Mutex<Option<RgbaImage>>>) -> Result<(),
 async fn run_save_new_img(monitor: Monitor, new_img: RgbaImage) -> Result<(), Box<dyn std::error::Error>> {
     if let Some(resized_image) = img_resizer::resize_image_img(new_img) {
         let encoder: Encoder = Encoder::from_image(&resized_image)?;
-        let webp_data: WebPMemory = encoder.encode(90.0); // Quality factor
+        let webp_data: WebPMemory = encoder.encode(79.0); // Quality factor
         let now = Local::now();
         let formatted_time: String = now.format("%Y-%m-%d-%H-%M-%S").to_string();
         let file_name: String = format!("target/monitor-{}-{:?}.webp", normalized(&monitor.name()), formatted_time);

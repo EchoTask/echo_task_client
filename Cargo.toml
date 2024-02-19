@@ -9,11 +9,14 @@ license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
-members = [".", "et_logger", "et_screen_capture", ]
+members = [".", "et_database", "et_logger", "et_screen_capture", ]
 
 [dependencies]
 et_screen_capture = { path = "et_screen_capture" }
+et_database = { path = "et_database" }
 et_logger = { path = "et_logger" }
+tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
+dotenv = "0.15.0"
 
 [dev-dependencies]
 

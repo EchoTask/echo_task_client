@@ -20,7 +20,7 @@ fn normalized(filename: &str) -> String {
         .replace("/", "")
 }
 
-#[tokio::main]
+
 pub async fn start_screen_recorder() {
     let last_image = Arc::new(Mutex::new(None::<RgbaImage>));
 
